@@ -1,0 +1,228 @@
+
+/*---------------------------left column----------------------------*/
+
+.dashboard .left-column{
+	min-height:100vh;
+	color: white;
+	background-color: #232629;
+}
+.dashboard .main-title{
+	text-align: center;
+	padding: 20px 0;
+}
+.dashboard .desc{
+	text-align: center;
+	display: block;
+	
+	padding-bottom: 40px;
+}
+.dashboard .nav-list{
+
+	width:100%;
+}
+
+.dashboard .nav-list li button, .dashboard .nav-list li a{
+	width: 100px;
+	display: block;	
+	margin: 20px auto;
+}
+.dashboard .form{
+	color: white;
+}
+
+
+/*-------------------right column-------------------*/
+.dashboard .main-content{
+
+	padding: inherit;
+}
+
+.dashboard .news{
+	width: 100%;
+	text-align: center;
+	line-height: 10;
+	background-color: blue;
+}
+.dashboard .score-resume{
+	text-align: center;
+	width: 50%;
+	display: inline-block;
+	background-color: red;
+	line-height: 35;
+}
+.dashboard .friends-online{
+	text-align: center;
+	width: 50%;
+	display: inline-block;
+	background-color: green;
+	line-height: 35;
+}
+.dashboard .chat-wrapper{
+	width: 100%;
+}
+
+.dashboard .chat-wrapper h2, .dashboard .chat-wrapper h1, .dashboard .chat-wrapper p, .dashboard .chat-wrapper li{
+	
+	color: #B5B4B0;
+}
+.dashboard .chat-wrapper form{
+	
+	display: inline-block;
+}
+.dashboard .chat-wrapper label{
+	font-size: 1.2em;
+	color: #B5B4B0;
+	margin-bottom: 15px;
+}
+
+.dashboard .chat-wrapper .users ul{
+	list-style: none;
+	background-color:#181818;
+	min-height: 510px;
+}
+
+.dashboard .users{
+	min-height: 390px;
+	vertical-align: top;
+	background-color: #181818;
+}
+.dashboard  .users li{
+	margin-top: 5px;
+	font-size: 1.2em;
+	color:#729002;
+}
+.dashboard .chat{
+	margin-top: 20px;
+	background-color: #181818;
+	height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.dashboard .chat-wrapper .form-control:focus{
+	border-color:#729002;
+}
+.dashboard .chat-wrapper .form-control{
+	background-color: #171A21;
+}
+
+.dashboard .chat-wrapper input, .dashboard .chat-wrapper input:focus, .dashboard .chat-wrapper input:active{
+	color: #B5B4B0;
+}
+
+/*-------------------------------- profile ------------------------------*/
+.dashboard .profile .main-header {
+	max-width: 85%;
+	margin: 20px auto;
+}
+.dashboard .profile .main-header .profile-img{
+	border-radius: 100%;
+	float: left;
+}
+
+.dashboard .profile .main-header .profile-presentation{
+	display: inline-block;
+	padding-left: 40px;
+	
+}
+.dashboard .profile .main-header .profile-text{
+	white-space: pre;
+	
+}
+.dashboard .profile .main-header .profile-presentation .profile-name{
+	
+	padding-top: 20px;
+	line-height: 2;
+}
+.dashboard .profile .news-profile{
+	clear: both;
+	margin: 25px auto;
+
+	max-width: 92%;
+	
+
+}
+.dashboard .profile .news-profile .post{
+	margin: 20px 0;
+	
+
+}
+.dashboard .profile .news-profile button{
+	margin : 5px 0 40px 0;
+	
+
+	
+
+}
+.dashboard .profile .news-profile ul li{
+	white-space: pre;
+
+}
+.dashboard .profile .news-profile h2{
+	text-align: center;
+}
+.dashboard .profile .update-profile-btn{
+	float: right;
+}
+/*----------------------------- search friend ------------*/
+
+.dashboard .profile .name-player{
+	text-decoration: none;
+	display: block;
+	margin: 15px 0;
+
+	color: black;
+	text-align: center;
+
+}
+.dashboard .profile .name-player img{
+	text-align: center;
+	display: block;
+	margin: 5px auto;
+
+}
+.dashboard .profile .search-area{
+	max-width: 90%;
+	margin: 0px auto;
+}
+.dashboard .profile .search-area button{
+	
+	margin: 5px auto;
+}
+.dashboard .profile .friend-area{
+	max-width: 90%;
+	margin: 40px auto;
+
+}
+.dashboard .profile .friend-area ul li{
+	display: inline-block;
+
+}
+.dashboard .profile .friend-request-area{
+	max-width: 90%;
+	margin: 40px auto;
+
+}
+.dashboard .profile .friend-request-area ul li{
+	display: inline-block;
+
+}
+.dashboard .profile .requested-area{
+	max-width: 90%;
+	margin: 60px auto;
+
+}
+.dashboard .profile .requested-area ul li{
+	display: inline-block;
+
+}
+
+/*---------------------------class jquery------------------*/
+
+/*remove status or post*/
+
+.remove-content{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+

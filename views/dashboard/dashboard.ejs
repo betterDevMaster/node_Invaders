@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tavern Invaders 0.1</title>
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/public/js/lib/Swiper-3.3.1/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="/public/css/global.css">
+	<link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+<body>
+	<div class="dashboard wrapper">
+		
+		<% include ../partials/partial-dashboard-nav %>
+		<section class="main-content col-xs-9 ">
+			<header class="news">
+				<p>placeholder slider here for news</p>
+			</header>
+
+			<div class="score-resume">
+				<p>placeholder 5 score here</p>
+			</div><div class="friends-online">
+				<p>placeholder friend online here</p>
+				
+			</div>
+			<div class="chat-wrapper">
+				<% include ../partials/partial-chat %>
+			</div>
+		</section>
+
+		
+			
+		
+	</div>
+	<!-- libs -->
+	<script src="/public/js/lib/jquery-2.2.3.min.js"></script>
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/public/js/lib/Swiper-3.3.1/dist/js/swiper.min.js"></script>
+	<!-- scripts -->
+	<script src="/public/js/dashboard.js"></script>
+	<!-- modules -->
+	<% include ../partials/partial-socket %>
+	<% include ../partials/partial-chat-script %>
+
+	<script>
+		app.init();
+	</script>
+
+	
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+	background-color:  skyblue;
+}
+.email-confirm {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.email-confirm .main-title{
+	line-height: 1.5;
+	text-align: center;
+	text-transform: uppercase;
+}
+.email-confirm p{
+	line-height: 1.5;
+	text-align: center;
+	text-transform: uppercase;
+}
+.email-confirm .panel{
+	border: 2px solid orange;
+	margin-top: 200px;
+	background-color: lightgrey;
+}

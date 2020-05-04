@@ -1,0 +1,28 @@
+{
+  "name": "Invaders",
+  "version": "0.0.3",
+  "description": "nodejs multi game",
+  "main": "index.html",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "fs-extra": "^0.30.0",
+    "multer": "^1.1.0",
+    "mysql": "^2.10.2",
+    "nodemailer": "^2.3.2",
+    "socket.io": "^1.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "InitialCrow",
+  "license": "MIT"
+}

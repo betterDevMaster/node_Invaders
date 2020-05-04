@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tavern Invaders 0.1</title>
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/public/js/lib/Swiper-3.3.1/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="/public/css/global.css">
+	<link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+<body>
+	<div class="dashboard wrapper">
+		
+		<% include ../partials/partial-dashboard-nav %>
+		<div class ="profile">
+			<% if (nickname ===null  && guestMode === false){ %><button class="update-profile-btn btn btn-default">update profile</button><% } if(guestMode === true){ %>
+			<button class="add-friend-btn btn btn-default">Add friend</button><%}%>
+			
+		
+			<section class="main-content col-xs-9 ">
+				<header class="main-header">
+					<% if (profile && profile.avatar ) { %>
+						<img class="profile-img" src="<%= profile.avatar %>" alt="picture of profile" width="28%" height="28%">
+					<% } %>
+					<div class="profile-presentation">
+						
+					
+						<h2 class="profile-name"> <% if (nickname != null){%><%= nickname%><% }else { %><%= _session.nickname %><% } %></h2>
+						<p class="profile-text"><% if (profile && profile.presentation) { %><%= profile.presentation %><% } %></p>
+						<p><% if (profile && profile.score != null) { %>Current Score : <%= profile.score %><% } %></p>
+					</div>
+				</header><!-- /header -->
+				<section class="news-profile">
+					<h2>My Dashboard</h2>
+					<p>
+						<form action="#" method="post">
+							<%if(guestMode === false){%>
+							<textarea name="post_content" class="post-content form-control" rows="5" placeholder="whrite post ..." type="text"></textarea>
+
+							<button class=" post-btn btn btn-default " data-type="post" type="submit">post</button>
+							<%}%>
+							<% if (posts ) { %>
+								<ul>
+								<% posts.forEach(function(post){%>
+									
+									<li class="col-xs-12 post" data-type="post" data-id="<%= post.id%>"><p><%= post.nickname%> : <%= post.content_post %></p></li>
+									<% if (comments){%>
+										<%comments.forEach(function(comment){%>
+											<%if(comment.post_id === post.id){%>
+												<li class="col-xs-12 comment" data-type="comment" data-id="<%= comment.id%>"><p>------> <%= comment.nickname%> a dit: <%= comment.content_com%></p></li>
+											<% } %>
+										<%});%>
+									<% } %>
+									<%if(guestMode === false){%>
+										<div class="form-group col-xs-9">
+											<textarea name="post_comment" class=" comment-content form-control" rows="5" placeholder="whrite comment ..." data-type="comment" type="text"></textarea>
+											<button class=" post-btn btn btn-default " type="submit" data-type="comment"  data-post-id="<%= post.id %>">comment</button>
+										</div>
+									<%}%>
+								<%});%>
+								
+									
+								</ul>
+								
+							<% } %>
+						</form>		
+					</p>
+					
+				</section>
+			</section>
+		</div>
+
+		
+			
+		
+	</div>
+	<!-- libs -->
+	<script src="/public/js/lib/jquery-2.2.3.min.js"></script>
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- scripts -->
+	<script src="/public/js/dashboard.js"></script>
+
+	<script>
+		app.init();
+	</script>
+
+</body>
+</html>

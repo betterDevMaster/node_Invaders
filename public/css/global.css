@@ -1,0 +1,16 @@
+/*---------------- ALREADY RESETED WITH BOOTSTRAP -------------*/
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size : 1.6em;
+}
+h2{
+	margin: inherit;
+}

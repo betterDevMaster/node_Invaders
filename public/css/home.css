@@ -1,0 +1,113 @@
+
+/*---------------------------left column----------------------------*/
+
+.home .left-column{
+	height: 100vh;
+	color: white;
+	background-color: #232629;
+}
+.home .main-title{
+	text-align: center;
+	padding: 20px 0;
+}
+.home .desc{
+	width : 90%;	
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+.home .log-list{
+
+	width:100%;
+}
+
+.home .log-list li button, .home .log-list li a{
+	width: 100px;
+	display: block;	
+	margin: 20px auto;
+}
+.home .form{
+	color: white;
+}
+
+
+/*-------------------right column-------------------*/
+.home .main-content{
+	padding: inherit;
+}
+.home .swiper-wrapper{
+	margin : 0;
+	padding: 0;
+	height: inherit;
+}
+.home .swiper-container {
+ 	margin: 0;
+ 	padding : 0;
+	height: 100vh;
+}
+
+.home .swiper-container-vertical > .swiper-pagination-bullets {
+	right: inherit;
+	left: 10px;  
+}
+.home .secondary-wrapper{
+	max-width: 90%;
+	margin: 0 auto;
+}
+.home .page-1{
+	color : white;
+	background-color: #5B0505;
+}
+.home .page-1 p{
+	padding: 20px 0;
+}
+.home .secondary-title{
+	text-align: center;
+	margin : 50px auto;
+}
+
+.home .page-2{
+	/*background-color: #2B0BFD;*/
+}
+.home .page-2 p{
+	padding: 20px 0;
+}
+.home .page-form{
+	height: 100vh;
+	display: none;
+	background-color: #232649;
+}
+.home .page-form .secondary-title{
+	
+	margin: inherit;
+	line-height: 4;
+	color: white;
+}
+.home .form label{
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	margin-top: 30px;
+
+}
+.home .form .sign-button{
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	margin-top: 30px;
+
+}
+.home .form .login-button{
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	margin-top: 30px;
+
+}
+.home .page-form p{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	padding: 20px 0;
+	color: white;
+}
+.home .alert{
+	color: black;
+}

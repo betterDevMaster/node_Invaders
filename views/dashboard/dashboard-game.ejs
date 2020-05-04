@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Play Invaders 0.0.2 (Alpha-building)</title>
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/public/js/lib/Swiper-3.3.1/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="/public/css/global.css">
+	<link rel="stylesheet" href="/public/css/game.css">
+</head>
+<body>
+	
+	<h2 class="game-title">Invaders 0.0.2   </h2>
+
+	<!-- libs -->
+	<script src="/public/js/lib/matterjs/matter.min.js"></script>
+	<!-- modules -->
+	<% include ../partials/partial-socket-game %>
+	
+	<!-- scripts -->
+	<script src="/public/js/gameEngine/class/Player.class.js"></script>
+	<script src="/public/js/gameEngine/app.js"></script>
+	<script src="/public/js/gameEngine/gameSettings.js"></script>
+	<script src="/public/js/gameEngine/gameEngine.js"></script>
+	<script src="/public/js/gameEngine/player.js"></script>
+	<script src="/public/js/gameEngine/world.js"></script>
+	<script src="/public/js/gameEngine/map.js"></script>
+	<script src="/public/js/gameEngine/mob.js"></script>
+	
+
+	<script>
+		App.init();
+	</script>
+
+	
+
+</body>
+</html>
